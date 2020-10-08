@@ -3,7 +3,7 @@
       v-on:mousemove="moveHiglight($event)"
       v-on:mouseout="hideHiglight($event)"
       class="tab">
-    <div class="highlight"></div>
+    <div :style="highlightStyle" class="highlight"></div>
     <slot></slot>
   </div>
 </template>
